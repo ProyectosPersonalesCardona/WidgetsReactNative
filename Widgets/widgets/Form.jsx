@@ -3,7 +3,7 @@ import {View, TextInput, Button, Alert} from 'react-native';
 
 
 import styles from '../styles/styles';
-
+//HOLA
 
 const TextInputExample = () => {
   const [nombre, onChangeText] = React.useState('');
