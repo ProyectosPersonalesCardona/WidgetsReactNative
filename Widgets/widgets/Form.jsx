@@ -2,13 +2,13 @@ import React from 'react';
 import {View, TextInput, Button, Alert} from 'react-native';
 
 
-import styles from '..styles/styles';
+import styles from '../styles/styles';
 
 
 const TextInputExample = () => {
-  const [text, onChangeText] = React.useState('Useless Text');
-  const [number, onChangeNumber] = React.useState('');
-
+  const [nombre, onChangeText] = React.useState('');
+  const [apellido, onChangeNumber] = React.useState('');
+  const [edad, onChangeEdad] = React.useState('');
   return (
     <View>
       <TextInput
@@ -25,7 +25,7 @@ const TextInputExample = () => {
       />
       <TextInput
         style={styles.input}
-        onChangeText={onChangeNumber}
+        onChangeText={onChangeEdad}
         value={edad}
         placeholder="Edad De Usuario"
         keyboardType='numeric'
@@ -33,10 +33,10 @@ const TextInputExample = () => {
       <Button
         onPress={
           ()=> {
-            Alert,alert("Ingreso De Usuario", `Bienvenido Al Sistema ${nombre} ${apellido}`)
+            Alert.alert("Ingreso De Usuario", `Bienvenido Al Sistema ${nombre} ${apellido}`)
           }
         }
-        tittle="Ingresar Usuario"
+        title="Ingresar Usuario"
         color="#841584"
         accessibilityLabel='saludar'
       />

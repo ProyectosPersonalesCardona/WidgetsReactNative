@@ -1,9 +1,13 @@
-import Listado from './widgets/listado';
-import styleListado from './styles/listado';
+import {StyleSheet} from 'react-native';
 
-const EXPORTAR=[
-    Listado,
-    styleListado
-]
 
-export default EXPORTAR;
+const styles = StyleSheet.create({
+    input: {
+      height: 40,
+      margin: 12,
+      borderWidth: 1,
+      padding: 10,
+    },
+  });
+
+  export default styles;
